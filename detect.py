@@ -66,7 +66,7 @@ def face_detect():
 				bottom *= 4
 				left *= 4
 				cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
-				cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), -1)
+				cv2.rectangle(frame, (left, bottom - 20), (right, bottom), (0, 0, 255), -1)
 				font = cv2.FONT_HERSHEY_DUPLEX
 				cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
 				outputQueue.put(frame)
